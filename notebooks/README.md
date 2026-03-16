@@ -6,6 +6,7 @@ Institución: CENTRUM PUCP
 Curso: Deep Learning - Aplicaciones Prácticas
 
 Resumen Ejecutivo
+
 Este proyecto implementa un Sistema de Alerta Temprana (Early Warning System - EWS) basado en Inteligencia Artificial para la gestión proactiva de riesgos de los clientes de Banca Corporativa del Banco ABC (empresas con ventas anuales de S/ 350 millones como mínimo). Mediante el uso de Redes Neuronales Artificiales (ANN), el sistema analiza indicadores financieros trimestrales para predecir y clasificar el nivel de deterioro de los clientes antes de que ocurra un evento de incumplimiento.
 
 A) El Problema de Negocio
