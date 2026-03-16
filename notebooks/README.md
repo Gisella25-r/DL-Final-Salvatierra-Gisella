@@ -13,6 +13,7 @@ A) El Problema de Negocio
 Actualmente, las evaluaciones de riesgo de los clientes de Banca Corporativa se basan en revisiones anuales estáticas que suelen ser reactivas y demoran un máximo de 45 días aproximadamente. Esta situación impide al banco tomar medidas de mitigación oportunas cuando detecta problemas de deterioro económico-financiero en las empresas. 
 
 B) La Solución (Propuesta de Valor)
+
 Monitoreo Dinámico: El modelo procesa información trimestral, eliminando la dependencia de la revisión anual.
 
 Detección de Patrones No Lineales: Supera los límites del análisis tradicional de ratios al identificar interrelaciones complejas entre liquidez, endeudamiento y eficiencia operativa.
