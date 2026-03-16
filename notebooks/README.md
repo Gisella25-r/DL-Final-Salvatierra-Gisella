@@ -32,6 +32,7 @@ Optimización: Uso de Dropout (20%) para evitar el sobreajuste y optimizador Ada
 Dataset: Generación de 8,400 registros sintéticos (700 empresas por 12 trimestres) para garantizar la robustez del entrenamiento.
 
 D) Resultados Clave
+
 Accuracy: 99.88% en el set de prueba (1,680 registros independientes).
 
 Recall (Sensibilidad): El modelo demostró una alta eficacia detectando el 100% de las alertas críticas (Rojas), cumpliendo su función primordial de prevención de default.
@@ -39,6 +40,7 @@ Recall (Sensibilidad): El modelo demostró una alta eficacia detectando el 100% 
 Impacto: El banco pasa de una revisión anual a una calificación predictiva instantánea apenas se recibe la información financiera trimestral.
 
 E) Estructura del Repositorio
+
 /notebooks: Contiene el archivo SALVATIERRA_GISELLA_Final_Project.ipynb con el código fuente y gráficos de desempeño.
 El dataset se genera en el mismo Colab. La explicación del dataset se encuentra en el Colab.
 
