@@ -38,7 +38,7 @@ Impacto: El banco pasa de una revisión anual a una calificación predictiva ins
 
 6. Estructura del Repositorio
 /notebooks: Contiene el archivo SALVATIERRA_GISELLA_Final_Project.ipynb con el código fuente y gráficos de desempeño.
+El dataset se genera en el mismo Colab. La explicación del dataset se encuentra en el Colab.
 
-/data: Incluye el dataset generado SALVATIERRA_GISELLA_Data_EWS (1).csv
 
 NOTA: El detalle de todo el proyecto, incluyendo objetivos, preparación de la data, justificación del modelo, conclusiones y recomendaciones, se encuentra en el archivo SALVATIERRA_GISELLA_Final_Project.ipynb
