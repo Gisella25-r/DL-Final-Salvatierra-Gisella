@@ -2,8 +2,11 @@ Resumen Ejecutivo
 Instrucciones: Proporcione un resumen conciso (máximo 300 palabras) que incluya:
 
 Problema de negocio abordado
+
 Metodología utilizada
+
 Principales hallazgos
+
 Impacto esperado en el negocio
 
 Problema abordado: La gestión de riesgos de la Banca Corporativa del Banco ABC (clientes con ventas > S/ 350MM) enfrenta una limitación crítica: su modelo de evaluación es reactivo, basándose en revisiones anuales que pueden demorar hasta 45 días. Esta falta de agilidad impide detectar deterioros financieros a tiempo, exponiendo a la institución a pérdidas crediticias que podrían mitigarse con un monitoreo preventivo y oportuno.
