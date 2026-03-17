@@ -1,8 +1,5 @@
 Información sobre el Dataset
-Origen de los Datos: Debido a políticas de confidencialidad del Banco ABC, este proyecto utiliza un Dataset Sintético generado programáticamente. No se requiere la carga de archivos externos.
+Debido a políticas de confidencialidad del Banco ABC, no se cuenta con la data real de las empresas del segmento de Banca Corporativa.
 
-Instrucciones para Carga: 
-1. El dataset de 8,400 registros se genera automáticamente al ejecutar la celda del Paso 3 en el notebook adjunto (SALVATIERRA_GISELLA_Final_Project.ipynb).
-2. El script crea el archivo SALVATIERRA_GISELLA_Data_EWS.csv en el entorno local de Colab para su procesamiento inmediato.
-
-Notas de Preprocesamiento: Los datos pasan por un proceso de estandarización (StandardScaler) y codificación (OneHotEncoder) antes de ingresar a la Red Neuronal, asegurando que los ratios financieros de distintas escalas sean comparables
+Descripción del Dataset
+El modelo de Redes Neuronales se entrena utilizando un conjunto de datos (data sintética) diseñado para simular el comportamiento financiero de la Banca Corporativa (Empresas con ventas anuales superiores a S/ 350MM). El dataset comprende la evolución financiera de 700 empresas monitoreadas trimestralmente durante un periodo de 3 años, totalizando 8,400 registros.
