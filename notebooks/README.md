@@ -1,47 +1,16 @@
-Sistema de Alerta Temprana (EWS) para Empresas de Banca Corporativa del Banco ABC
-Estudiante: Salvatierra, Gisella
-
-Institución: CENTRUM PUCP
-
-Curso: Deep Learning - Aplicaciones Prácticas
-
 Resumen Ejecutivo
+Instrucciones: Proporcione un resumen conciso (máximo 300 palabras) que incluya:
 
-Este proyecto implementa un Sistema de Alerta Temprana (Early Warning System - EWS) basado en Inteligencia Artificial para la gestión proactiva de riesgos de los clientes de Banca Corporativa del Banco ABC (empresas con ventas anuales de S/ 350 millones como mínimo). Mediante el uso de Redes Neuronales Artificiales (ANN), el sistema analiza indicadores financieros trimestrales para predecir y clasificar el nivel de deterioro de los clientes antes de que ocurra un evento de incumplimiento.
+Problema de negocio abordado
+Metodología utilizada
+Principales hallazgos
+Impacto esperado en el negocio
 
-A) El Problema de Negocio
-Actualmente, las evaluaciones de riesgo de los clientes de Banca Corporativa se basan en revisiones anuales estáticas que suelen ser reactivas y demoran un máximo de 45 días aproximadamente. Esta situación impide al banco tomar medidas de mitigación oportunas cuando detecta problemas de deterioro económico-financiero en las empresas. 
+Problema abordado: La gestión de riesgos de la Banca Corporativa del Banco ABC (clientes con ventas > S/ 350MM) enfrenta una limitación crítica: su modelo de evaluación es reactivo, basándose en revisiones anuales que pueden demorar hasta 45 días. Esta falta de agilidad impide detectar deterioros financieros a tiempo, exponiendo a la institución a pérdidas crediticias que podrían mitigarse con un monitoreo preventivo y oportuno.
 
-B) La Solución (Propuesta de Valor)
+Metodología: Se diseñó e implementó un Sistema de Alerta Temprana (EWS) fundamentado en técnicas de Deep Learning. El proyecto se estructuró como un problema de clasificación multiclase para categorizar el riesgo en cuatro niveles: Sin Alerta, Verde, Amarilla y Roja. La arquitectura emplea una Red Neuronal Artificial (ANN) multicapa con funciones de activación ReLU y capas de normalización (Batch Normalization) para capturar interacciones no lineales entre ratios financieros de liquidez, solvencia y rentabilidad. Se utilizó una capa de salida Softmax para determinar las probabilidades de riesgo y se aplicó Dropout al 20% para garantizar la robustez del modelo. La solución fue validada mediante un benchmarking contra modelos de regresión logística y bosques aleatorios (Random Forest)
 
-Monitoreo Dinámico: El modelo procesa información trimestral, eliminando la dependencia de la revisión anual.
+Principales hallazgos: El modelo de Deep Learning alcanzó un Accuracy del 94.44% en el conjunto de test, demostrando una capacidad superior de generalización frente a datos no vistos. Un hallazgo estratégico para el negocio fue la precisión del 98% en la detección de Alertas Rojas, lo que virtualmente elimina los "falsos positivos" en casos críticos y asegura que las alarmas de default sean altamente confiables. Asimismo, la red neuronal superó en 17 puntos porcentuales a la Regresión Logística tradicional (77.7%), confirmando que los riesgos financieros actuales requieren modelos no lineales para una predicción precisa.
 
-Detección de Patrones No Lineales: Supera los límites del análisis tradicional de ratios al identificar interrelaciones complejas entre liquidez, endeudamiento y eficiencia operativa.
+Impacto esperado: La implementación de esta herramienta transforma la gestión de riesgos de una postura estática a una estrategia proactiva y continua. Se logra una reducción drástica en los tiempos de respuesta ante el envío de información trimestral, permitiendo la ejecución de planes de acción inmediatos y la optimización de las provisiones bancarias. Además de la mejora en la calidad de la cartera, el modelo dota al Banco ABC de una infraestructura de IA explicable y auditable, alineada con las exigencias regulatorias de la SBS y preparada para escalar hacia análisis transaccionales de alta frecuencia.
 
-Clasificación Multiclase: Categoriza a los clientes en 4 niveles: Sin Alerta, Verde, Amarilla y Roja, permitiendo una intervención inmediata en los niveles preventivos (Verde/Amarilla).
-
-C) Aspectos Técnicos del Modelo
-Siguiendo los lineamientos de las sesiones de clase (Deep Learning), se desarrolló un pipeline completo:
-
-Arquitectura: Red Neuronal Feed-Forward (Multilayer Perceptron) con capas densas.
-
-Activaciones: ReLU en capas ocultas para gestionar la no linealidad y Softmax en la capa de salida para clasificación multiclase.
-
-Optimización: Uso de Dropout (20%) para evitar el sobreajuste y optimizador Adam para una convergencia eficiente.
-
-Dataset: Generación de 8,400 registros sintéticos (700 empresas por 12 trimestres) para garantizar la robustez del entrenamiento.
-
-D) Resultados Clave
-
-Accuracy: 99.88% en el set de prueba (1,680 registros independientes).
-
-Recall (Sensibilidad): El modelo demostró una alta eficacia detectando el 100% de las alertas críticas (Rojas), cumpliendo su función primordial de prevención de default.
-
-Impacto: El banco pasa de una revisión anual a una calificación predictiva instantánea apenas se recibe la información financiera trimestral.
-
-E) Estructura del Repositorio
-
-/notebooks: Contiene el archivo SALVATIERRA_GISELLA_Final_Project.ipynb con el código fuente y gráficos de desempeño.
-El dataset se genera en el mismo Colab. La explicación del dataset se encuentra en el Colab.
-
-NOTA: El detalle de todo el proyecto, incluyendo objetivos, preparación de la data, justificación del modelo, conclusiones y recomendaciones, se encuentra en el archivo SALVATIERRA_GISELLA_Final_Project.ipynb
